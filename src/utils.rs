@@ -1,11 +1,9 @@
 use async_std::io::WriteExt;
 
-use crate::FromClient;
 use async_std::prelude::*;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 use std::error::Error;
-use std::sync::Arc;
 
 /// The error type representing all errors which happen in the chat app
 pub type ChatError = Box<dyn Error + Send + Sync + 'static>;
